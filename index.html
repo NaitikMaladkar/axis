@@ -3,38 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Axis — Align your work, accelerate your outcomes</title>
-  <meta name="description" content="Axis is the analytics platform that turns scattered signals into decisive action." />
+  <title>Axis — Projects by Naitik Maladkar</title>
+  <meta name="description" content="A hub for my apps, services, and side-projects. Built and maintained by Naitik Maladkar." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated background grid -->
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
 
-  <!-- Nav -->
   <header class="nav">
     <div class="nav__inner">
       <a class="brand" href="#top">
         <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 3v18M3 12h18" />
           </svg>
         </span>
         <span class="brand__name">Axis</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#features">Features</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="nav__cta">
-        <a class="btn btn--ghost" href="#signin">Sign in</a>
-        <a class="btn btn--primary" href="#start">Start free</a>
+        <a class="btn btn--ghost btn--sm" href="https://github.com/NaitikMaladkar" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          GitHub
+        </a>
       </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -42,251 +41,97 @@
     </div>
   </header>
 
-  <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="#features">Features</a>
-    <a href="#how">How it works</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#faq">FAQ</a>
-    <a class="btn btn--primary" href="#start">Start free</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/NaitikMaladkar" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
 
   <main id="top">
     <!-- Hero -->
     <section class="hero">
-      <div class="hero__copy">
-        <span class="eyebrow">New · Axis 2.0</span>
+      <div class="hero__inner">
+        <span class="eyebrow">Personal hub</span>
         <h1 class="hero__title">
-          Align your work,<br />
-          <span class="gradient-text">accelerate your outcomes.</span>
+          Apps, services &amp; experiments<br />
+          <span class="gradient-text">all on one axis.</span>
         </h1>
         <p class="hero__lead">
-          Axis brings every metric, project, and decision into one calm surface.
-          See what matters, ship what counts, and stop juggling tabs at 9pm on a Friday.
+          A simple home for everything I'm building. Browse the projects below,
+          click through to whatever you're curious about, and check back —
+          this list grows as I ship.
         </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary btn--lg" href="#start">Start free — no card</a>
-          <a class="btn btn--ghost btn--lg" href="#demo">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
-            Watch demo
-          </a>
+        <div class="hero__meta">
+          <span><strong id="projectCount">0</strong> projects</span>
+          <span class="dot-sep"></span>
+          <span>updated <strong id="lastUpdated">—</strong></span>
         </div>
-        <ul class="hero__trust">
-          <li><strong>4,800+</strong> teams</li>
-          <li><strong>99.98%</strong> uptime</li>
-          <li><strong>SOC&nbsp;2</strong> Type II</li>
-        </ul>
       </div>
-      <div class="hero__visual" aria-hidden="true">
-        <div class="panel">
-          <div class="panel__bar">
-            <span class="dot dot--red"></span>
-            <span class="dot dot--amber"></span>
-            <span class="dot dot--green"></span>
-            <span class="panel__title">axis · overview</span>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work">
+      <div class="section__head">
+        <span class="eyebrow">Work</span>
+        <h2>Things I've built.</h2>
+        <p>Filter by type, click any card to open the project. Updated whenever something ships.</p>
+      </div>
+
+      <div class="filters" id="filters" role="tablist" aria-label="Project filters"></div>
+
+      <div class="projects" id="projects" aria-live="polite"></div>
+
+      <p class="projects__empty" id="emptyState" hidden>
+        No projects in this category yet. Check back soon.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section class="section section--alt" id="about">
+      <div class="about">
+        <div class="about__copy">
+          <span class="eyebrow">About</span>
+          <h2>Hi — I'm Naitik.</h2>
+          <p>
+            I build software — apps, services, small tools, and the occasional
+            experiment that probably shouldn't have shipped but did anyway.
+            This page is my index of those things, kept up to date as I go.
+          </p>
+          <p>
+            Everything here is open unless noted otherwise. If something looks
+            interesting, fork it, file an issue, or just say hi.
+          </p>
+        </div>
+        <div class="about__card">
+          <div class="about__row">
+            <span class="about__label">Focus</span>
+            <span class="about__value">Web · APIs · Tooling</span>
           </div>
-          <div class="panel__body">
-            <div class="kpi-row">
-              <div class="kpi">
-                <span class="kpi__label">Active projects</span>
-                <span class="kpi__value">38</span>
-                <span class="kpi__delta kpi__delta--up">+12%</span>
-              </div>
-              <div class="kpi">
-                <span class="kpi__label">On-time rate</span>
-                <span class="kpi__value">94%</span>
-                <span class="kpi__delta kpi__delta--up">+3 pts</span>
-              </div>
-              <div class="kpi">
-                <span class="kpi__label">Avg cycle</span>
-                <span class="kpi__value">2.4d</span>
-                <span class="kpi__delta kpi__delta--down">-0.6d</span>
-              </div>
-            </div>
-            <div class="chart" aria-hidden="true">
-              <svg viewBox="0 0 320 120" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.55"></stop>
-                    <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"></stop>
-                  </linearGradient>
-                </defs>
-                <path class="chart__area" d="M0,90 L20,80 L40,86 L60,60 L80,68 L100,40 L120,52 L140,30 L160,46 L180,22 L200,38 L220,18 L240,30 L260,14 L280,26 L300,8 L320,18 L320,120 L0,120 Z" fill="url(#area)" />
-                <path class="chart__line" d="M0,90 L20,80 L40,86 L60,60 L80,68 L100,40 L120,52 L140,30 L160,46 L180,22 L200,38 L220,18 L240,30 L260,14 L280,26 L300,8 L320,18" fill="none" stroke="#a98bff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div class="legend">
-              <span><i class="sw sw--purple"></i> Shipped</span>
-              <span><i class="sw sw--slate"></i> Planned</span>
-              <span class="legend__right">Last 14 days</span>
-            </div>
+          <div class="about__row">
+            <span class="about__label">Location</span>
+            <span class="about__value">India</span>
+          </div>
+          <div class="about__row">
+            <span class="about__label">Status</span>
+            <span class="about__value"><span class="status-dot"></span>Building</span>
+          </div>
+          <div class="about__row">
+            <span class="about__label">GitHub</span>
+            <a class="about__value about__link" href="https://github.com/NaitikMaladkar" target="_blank" rel="noopener">@NaitikMaladkar ↗</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Logo strip -->
-    <section class="strip">
-      <p class="strip__label">Trusted by fast-moving teams at</p>
-      <div class="strip__logos">
-        <span>Northwind</span><span>Lumen</span><span>Hyperloop</span><span>Atlas&nbsp;Labs</span><span>Quanta</span><span>Vela</span>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section class="section" id="features">
-      <div class="section__head">
-        <span class="eyebrow">Features</span>
-        <h2>Everything you need.<br />Nothing you don't.</h2>
-        <p>A small, sharp toolkit that helps your team ship without the bloat of legacy platforms.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="card__icon">01</div>
-          <h3>Unified signal</h3>
-          <p>Pull metrics from 60+ sources into a single live view. No more tab-switching, no more copy-paste into spreadsheets at 5pm.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">02</div>
-          <h3>Decision logs</h3>
-          <p>Every shipped change is tied to a decision, an owner, and an outcome — so retros write themselves.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">03</div>
-          <h3>Quiet alerts</h3>
-          <p>Smart thresholds learn your team's normal. You only get pinged when something is genuinely off.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">04</div>
-          <h3>Plan vs. reality</h3>
-          <p>See your roadmap next to actual velocity, and let Axis flag slippage before it becomes a war room.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">05</div>
-          <h3>Private by default</h3>
-          <p>Row-level permissions, audit trails, and SSO. Your data never trains a public model. Ever.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">06</div>
-          <h3>Fast everywhere</h3>
-          <p>Sub-100ms dashboards on any continent. Built on edge-rendered static pages and incremental sync.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="section section--alt" id="how">
-      <div class="section__head">
-        <span class="eyebrow">How it works</span>
-        <h2>Three steps to clarity.</h2>
-      </div>
-      <ol class="steps">
-        <li class="step">
-          <span class="step__num">1</span>
-          <h3>Connect</h3>
-          <p>Hook up your code, tickets, and analytics in under five minutes. Axis auto-maps the relationships.</p>
-        </li>
-        <li class="step">
-          <span class="step__num">2</span>
-          <h3>Align</h3>
-          <p>Set your north-star metrics. Axis surfaces the projects that actually move them — and the ones that don't.</p>
-        </li>
-        <li class="step">
-          <span class="step__num">3</span>
-          <h3>Ship</h3>
-          <p>Run weekly reviews from one calm page. Decisions get logged, owners get pinged, retros write themselves.</p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section" id="pricing">
-      <div class="section__head">
-        <span class="eyebrow">Pricing</span>
-        <h2>Simple, honest pricing.</h2>
-        <p>Pay per active editor. Viewers and integrations are always free.</p>
-      </div>
-      <div class="pricing">
-        <div class="plan">
-          <h3>Starter</h3>
-          <p class="plan__blurb">For small teams finding their rhythm.</p>
-          <div class="plan__price"><span class="plan__amount">$0</span><span class="plan__per">/mo</span></div>
-          <ul class="plan__feats">
-            <li>Up to 5 editors</li>
-            <li>3 integrations</li>
-            <li>7-day history</li>
-            <li>Community support</li>
-          </ul>
-          <a class="btn btn--ghost" href="#start">Start free</a>
-        </div>
-        <div class="plan plan--featured">
-          <span class="plan__tag">Most popular</span>
-          <h3>Growth</h3>
-          <p class="plan__blurb">For teams shipping every week.</p>
-          <div class="plan__price"><span class="plan__amount">$12</span><span class="plan__per">/editor / mo</span></div>
-          <ul class="plan__feats">
-            <li>Unlimited editors</li>
-            <li>All 60+ integrations</li>
-            <li>2-year history</li>
-            <li>Decision logs & retros</li>
-            <li>Priority support</li>
-          </ul>
-          <a class="btn btn--primary" href="#start">Start 14-day trial</a>
-        </div>
-        <div class="plan">
-          <h3>Scale</h3>
-          <p class="plan__blurb">For orgs with security & SSO needs.</p>
-          <div class="plan__price"><span class="plan__amount">Custom</span></div>
-          <ul class="plan__feats">
-            <li>SAML SSO & SCIM</li>
-            <li>Row-level permissions</li>
-            <li>Audit exports</li>
-            <li>Dedicated CSM</li>
-            <li>99.9% SLA</li>
-          </ul>
-          <a class="btn btn--ghost" href="#contact">Talk to us</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section--alt" id="faq">
-      <div class="section__head">
-        <span class="eyebrow">FAQ</span>
-        <h2>Questions, answered.</h2>
-      </div>
-      <div class="faq">
-        <details class="faq__item" open>
-          <summary>How long does setup take?</summary>
-          <p>Most teams are live in under 10 minutes. Connect GitHub, Jira, or Linear; pick your north-star metric; you're done. Axis auto-discovers the rest and builds your first dashboard before your coffee is cold.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Do you train AI on my data?</summary>
-          <p>No. Your data is never used to train any model, ours or anyone else's. We offer private deployments for teams that need them, and we'll put that commitment in your DPA.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Can I export everything?</summary>
-          <p>Yes. A one-click export gives you every dashboard, decision log, and metric series as CSV or JSON. We believe in easy exits — lock-in is not a strategy.</p>
-        </details>
-        <details class="faq__item">
-          <summary>What integrations are supported?</summary>
-          <p>60+ and counting: GitHub, GitLab, Jira, Linear, Slack, Notion, Figma, Sentry, Datadog, Mixpanel, Amplitude, BigQuery, Snowflake, and more. If we don't have it, ask — we ship one new connector most weeks.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Is there a self-hosted version?</summary>
-          <p>On Scale and Enterprise plans, yes. Axis ships as a single Helm chart and runs happily on any Kubernetes 1.24+ cluster. Most teams keep it on our managed cloud and add a VPC peering for sensitive data sources.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-      <div class="cta__inner">
-        <h2>Stop juggling tabs.<br />Start shipping on Axis.</h2>
-        <p>Free for 5 editors. No credit card. Set up in 10 minutes.</p>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="cta">
+        <h2>Want to talk?</h2>
+        <p>The fastest way to reach me is email. I read everything, eventually.</p>
         <div class="cta__actions">
-          <a class="btn btn--primary btn--lg" href="#start">Start free</a>
-          <a class="btn btn--ghost btn--lg" href="#contact">Book a walkthrough</a>
+          <a class="btn btn--primary btn--lg" href="mailto:hello@example.com">Email me</a>
+          <a class="btn btn--ghost btn--lg" href="https://github.com/NaitikMaladkar" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
     </section>
@@ -297,39 +142,29 @@
       <div class="footer__brand">
         <a class="brand" href="#top">
           <span class="brand__mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 3v18M3 12h18" />
             </svg>
           </span>
           <span class="brand__name">Axis</span>
         </a>
-        <p class="footer__tag">Align your work, accelerate your outcomes.</p>
+        <p class="footer__tag">A personal projects hub. Built and maintained by Naitik Maladkar.</p>
       </div>
       <div class="footer__col">
-        <h4>Product</h4>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
+        <h4>Navigate</h4>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="footer__col">
-        <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Customers</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="footer__col">
-        <h4>Legal</h4>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Security</a>
-        <a href="#">DPA</a>
+        <h4>Elsewhere</h4>
+        <a href="https://github.com/NaitikMaladkar" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="mailto:hello@example.com">Email ↗</a>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Axis Labs, Inc.</span>
-      <span>Built with care. Hosted on the edge.</span>
+      <span>© <span data-year>2026</span> Naitik Maladkar</span>
+      <span>Built with care. Source on GitHub.</span>
     </div>
   </footer>
 
